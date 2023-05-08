@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Send your message here!
+  form(action="/new", method="post") 
+    input#input(type="text", name="username")
+    br
+    input#input2(type="text", name="text")
+    br
+    button(type="submit") Submit

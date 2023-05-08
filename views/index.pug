@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= 'Messages'
+  br
+  a(href='/new') Add your own message by clicking here!
+  each val in messages
+    p USER: #{val.user}
+    p TEXT: #{val.text}
+    p DATE: #{val.added}
+    br
